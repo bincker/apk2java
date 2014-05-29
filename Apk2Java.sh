@@ -6,7 +6,7 @@ if [ $# -lt 1 ]; then
 echo "you should input an apk file to decode"
 exit 0
 fi
-
+#
 apkfile=$1
 test -f $apkfile || (echo "you should input an apk file to decode" && exit 0)
 apkfilebasename=$(basename $apkfile)
